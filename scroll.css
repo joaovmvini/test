@@ -1,0 +1,24 @@
+
+.jscroll {
+    content: '';
+    position: absolute;
+    background-color: #ddd;
+    border-radius: 4px;
+    opacity: 0;
+}
+
+.jscroll-v{
+    width: 10px;
+}
+
+.jscroll-h {
+    height: 10px;
+}
+
+.jscroll-container {
+    position: absolute;
+}
+
+.jscroll.show {
+    opacity: 1;
+}
