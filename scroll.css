@@ -2,23 +2,49 @@
 .jscroll {
     content: '';
     position: absolute;
-    background-color: #ddd;
+    background-color: #777879;
     border-radius: 4px;
-    opacity: 0;
 }
 
 .jscroll-v{
-    width: 10px;
+    top: 0;
+    right: 0;
+    width: 8px;
 }
 
 .jscroll-h {
-    height: 10px;
+    bottom: 0;
+    left: 0;
+    height: 8px;
 }
 
 .jscroll-container {
+    opacity: 0;
+    transition: .3s all ease-in;
     position: absolute;
+    background:#C6C8CB;
 }
 
-.jscroll.show {
+.jscroll-container.show {
     opacity: 1;
 }
+
+.jscroll-container.vertical {
+    width: 8px;
+    right: 0;
+    top: 0;
+}
+
+.jscroll-container.horizontal{
+    bottom: 0;
+    left: 0;
+    height: 6px;
+}
+
+*.jscroll-unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+ }
